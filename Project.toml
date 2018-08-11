@@ -1,0 +1,6 @@
+authors = ["Gaussia <torkel.loman@gmail.com>"]
+name = "Why"
+uuid = "3a072ee4-9d56-11e8-23ab-450d12b5728a"
+version = "0.1.0"
+
+[deps]
