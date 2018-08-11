@@ -15,7 +15,7 @@ function make_ans()
     if (global QUERY_COUNT+=1) > 5 + rand(1:15)
         global QUERY_COUNT -= rand(1:10)
         return message = mess_persistent[rand(1:length(mess_persistent))]
-    elseif rand() < 0.20
+    elseif rand() < 0.15
         return message = single[rand(1:length(single))]
     end
     return uppercasefirst(rand_element(begins) * noun(1.0) * rand_element(fins) * ".")
@@ -43,7 +43,7 @@ function adv(p)
     return rand_element(advs)*" "
 end
 
-.
+
 #Extra functions
 function and(s::String)
     (s=="") && return s
