@@ -13,7 +13,7 @@ const begins = ("Because ", "")
 const fins = ("wanted it", "decided so", "made it happen")
 const mess_persistent = ("Why do you keep asking these questions?", "Please Stop.")
 const single = ("I do not know", "42")
-function make_and()
+function make_ans()
     if (query_count+=1) > 5 + rand(1:15)
         query_count -= min(query_count,rand(1:10))
         return message = mess_persistent[rand(length(mess_persistent))]
