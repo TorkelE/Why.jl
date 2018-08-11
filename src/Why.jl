@@ -14,7 +14,7 @@ const single = ("I do not know", "42")
 function make_ans()
     if (global QUERY_COUNT+=1) > 5 + rand(1:15)
         global QUERY_COUNT -= rand(1:10)
-        return message = mess_persistent[rand(length(mess_persistent))]
+        return message = mess_persistent[1:rand(length(mess_persistent))]
     elseif rand() < 0.20
         return message = single[rand(1:length(single))]
     end
@@ -39,7 +39,7 @@ end
 
 #Nouns
 const preps = ("the", "a", "some")
-const nouns = ("compiler", "research software engineer", "type pirate", "cockatoo", "manager", "programmer", "software")
+const nouns = ("compiler", "person", "research software engineer", "type pirate", "cockatoo", "manager", "programmer", "software")
 function noun(p)
     (rand()>p) && return ""
     return rand_element(preps)*" "*adj(0.80)*rand_element(nouns)*" "*and(noun(p-0.3))
