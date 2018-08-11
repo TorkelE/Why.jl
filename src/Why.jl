@@ -9,11 +9,11 @@ end
 
 const begins = ("because ", "")
 const fins = ("wanted it", "decided so", "made it happen")
-const mess_persistent = ("Why do you keep asking these questions?", "Please Stop.")
+const mess_persistent = ("Why do you keep asking these questions?", "Please stop.")
 const single = ("I do not know", "42")
 function make_ans()
     if (global QUERY_COUNT+=1) > 5 + rand(1:15)
-        global QUERY_COUNT -= min(global QUERY_COUNT,rand(1:10))
+        global QUERY_COUNT -= rand(1:10)
         return message = mess_persistent[rand(length(mess_persistent))]
     elseif rand() < 0.20
         return message = single[rand(1:length(single))]
