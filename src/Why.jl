@@ -1,9 +1,7 @@
 using Random
 
 module Why
-
-
-query_count = 0
+QUERY_COUNT = 0
 
 function why()
     return make_ans()
@@ -14,8 +12,8 @@ const fins = ("wanted it", "decided so", "made it happen")
 const mess_persistent = ("Why do you keep asking these questions?", "Please Stop.")
 const single = ("I do not know", "42")
 function make_ans()
-    if (query_count+=1) > 5 + rand(1:15)
-        query_count -= min(query_count,rand(1:10))
+    if (global QUERY_COUNT+=1) > 5 + rand(1:15)
+        global QUERY_COUNT -= min(query_count,rand(1:10))
         return message = mess_persistent[rand(length(mess_persistent))]
     elseif rand() < 0.20
         return message = single[rand(1:length(single))]
@@ -52,7 +50,7 @@ function and(s::String)
     return "and " * s
 end
 
-rand_element(tup::Tuple) = tup[rand(length(tup))]
+rand_element(tup::Tuple) = tup[1:rand(length(tup))]
 
 export why
 
