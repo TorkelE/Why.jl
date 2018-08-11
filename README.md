@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/TorkelE/Why.jl.svg?branch=master)](https://travis-ci.org/TorkelE/Why.j)
 # Why.jl
 
 Provides a single function `why()` which returns a randomly generated String giving an explanation. Example outputs:
