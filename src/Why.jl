@@ -50,7 +50,7 @@ function and(s::String)
     return "and " * s
 end
 
-rand_element(tup::Tuple) = tup[1:rand(length(tup))]
+rand_element(tup::Tuple) = tup[rand(1:length(tup))]
 
 export why
 
