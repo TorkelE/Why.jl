@@ -14,7 +14,7 @@ const single = ("I do not know", "42")
 function make_ans()
     if (global QUERY_COUNT+=1) > 5 + rand(1:15)
         global QUERY_COUNT -= rand(1:10)
-        return message = mess_persistent[1:rand(length(mess_persistent))]
+        return message = mess_persistent[rand(1:length(mess_persistent))]
     elseif rand() < 0.20
         return message = single[rand(1:length(single))]
     end
