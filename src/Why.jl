@@ -23,21 +23,21 @@ end
 
 #Nouns
 const preps = ("the", "a", "some")
-const nouns = ("compiler", "person", "research software engineer", "type pirate", "cockatoo", "manager", "programmer", "software")
+const nouns = ("compiler", "person", "research software engineer", "type pirate", "cockatoo", "manager", "programmer", "software", "penguin", "config file", "divine being")
 function noun(p)
     (rand()>p) && return ""
     return rand_element(preps)*" "*adj(0.80)*rand_element(nouns)*" "*and(noun(p/2))
 end
 
 #Ajectives
-const adjs = ("fast", "type-safe", "harmless", "deceitful", "cool", "self aware")
+const adjs = ("fast", "type-safe", "harmless", "deceitful", "cool", "self aware", "scary", "insecure", "paranoid", "cunning", "irrelevant", "undocumented")
 function adj(p)
     (rand()>p) && return ""
     return adv(0.5)*rand_element(adjs)*" "*and(adj(p/2.5))
 end
 
 #Adverbs
-const advs = ("vaguely", "extraordinarily", "properly", "very", "not at all")
+const advs = ("vaguely", "extraordinarily", "properly", "very", "not at all", "probably")
 function adv(p)
     (rand()>p) && return ""
     return rand_element(advs)*" "
