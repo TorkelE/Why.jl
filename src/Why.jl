@@ -1,5 +1,11 @@
 module Why
 
-greet() = print("Hello World!")
+function why()
+    message = "Because"
+
+    return message
+end
+
+export why
 
 end # module
