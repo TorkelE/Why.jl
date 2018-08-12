@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/TorkelE/Why.jl.svg?branch=master)](https://travis-ci.org/TorkelE/Why.j)
+[![codecov](https://codecov.io/gh/TorkelE/Why.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/TorkelE/Why.jl)
 # Why.jl
 
 Provides a single function `why()` which returns a randomly generated String giving an explanation. Example outputs:
