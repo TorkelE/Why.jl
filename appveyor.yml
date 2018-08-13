@@ -1,5 +1,6 @@
 environment:
   matrix:
+  - julia_version: 0.6
   - julia_version: 0.7
   - julia_version: 1
   - julia_version: nightly
@@ -8,11 +9,9 @@ platform:
   - x86 # 32-bit
   - x64 # 64-bit
 
-# Uncomment the following lines to allow failures on nightly julia
-# (tests will run but not make your overall status red)
 matrix:
   allow_failures:
-    - julia_version: latest
+  - julia_version: latest
 
 branches:
   only:
@@ -29,13 +28,8 @@ install:
   - ps: iex ((new-object net.webclient).DownloadString("https://raw.githubusercontent.com/JuliaCI/Appveyor.jl/version-1/bin/install.ps1"))
 
 build_script:
-  - C:\julia\bin\julia -e "using InteractiveUtils; versioninfo();
-      using UUIDs;
-      before = read(\"Project.toml\", String);
-      after = replace(before, \"uuid = \\\"44cfe95a-1eb2-52ea-b672-e2afdf69b78f\\\"\" =>
-                              \"uuid = \\\"4d836010-47a6-11e8-12b2-0918962bae33\\\"\");
-      write(\"Project.toml\", after);
-      import Pkg; Pkg.build()"
+  - echo "%JL_BUILD_SCRIPT%"
+  - C:\julia\bin\julia -e "%JL_BUILD_SCRIPT%"
 
 test_script:
   - echo "%JL_TEST_SCRIPT%"
