@@ -12,6 +12,8 @@ Provides a single function `why()` which returns a randomly generated String giv
 
 `"Some not at all self aware and very self aware compiler and some deceitful research software engineer decided so."`
 
+`"The rudimentary struct and a self aware research software engineer and a vaguely scary config file could not prevent it."`
+
 A follow up function `how()` is a current work in progress.
 
 (Initially a project from the JuliaCon 2018 hackathon)
