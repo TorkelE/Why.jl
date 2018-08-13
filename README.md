@@ -11,3 +11,5 @@ Provides a single function `why()` which returns a randomly generated String giv
 "Some deceitful and vaguely self aware person and the programmer wanted it."
 
 "Some not at all self aware and very self aware compiler and some deceitful research software engineer decided so."
+
+(Initially a project from the JuliaCon 2018 hackathon)
