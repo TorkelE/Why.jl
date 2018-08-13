@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/TorkelE/Why.jl.svg?branch=master)](https://travis-ci.org/TorkelE/Why.j)
+[![Build status](https://ci.appveyor.com/api/projects/status/f72vlmuvlpux7x6p?svg=true)](https://ci.appveyor.com/project/korsbo/latexify-jl)
 [![codecov](https://codecov.io/gh/TorkelE/Why.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/TorkelE/Why.jl)
 # Why.jl
 
