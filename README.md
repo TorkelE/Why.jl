@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/TorkelE/Why.jl.svg?branch=master)](https://travis-ci.org/TorkelE/Why.j)
 [![Build status](https://ci.appveyor.com/api/projects/status/f72vlmuvlpux7x6p?svg=true)](https://ci.appveyor.com/project/korsbo/latexify-jl)
 [![codecov](https://codecov.io/gh/TorkelE/Why.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/TorkelE/Why.jl)
-[![Coverage Status](https://coveralls.io/repos/github/korsbo/Latexify.jl/badge.svg)](https://coveralls.io/github/korsbo/Latexify.jl)
+[![Coverage Status](https://coveralls.io/repos/github/TorkelE/Why.jl/badge.svg)](https://coveralls.io/github/TorkelE/Why.jl)
 # Why.jl
 
 Provides a single function `why()` which returns a randomly generated String giving an explanation. Example outputs:
